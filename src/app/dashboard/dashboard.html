@@ -1,0 +1,31 @@
+<mat-sidenav-container class="dashboard-container">
+
+  <!-- Sidebar -->
+  <mat-sidenav #sidenav mode="side" [(opened)]="isSidebarOpen" class="sidebar">
+    <mat-toolbar color="primary">Dashboard</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#"><mat-icon>home</mat-icon> Home</a>
+      <a mat-list-item href="#"><mat-icon>bar_chart</mat-icon> Analytics</a>
+      <a mat-list-item href="#"><mat-icon>settings</mat-icon> Settings</a>
+      <a mat-list-item href="#"><mat-icon>logout</mat-icon> Logout</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- Main Content -->
+  <mat-sidenav-content class="content">
+    <!-- Top Toolbar -->
+    <mat-toolbar color="accent">
+      <!-- Hamburger Icon -->
+      <button mat-icon-button (click)="toggleSidebar()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Welcome {{Role}}</span>
+    </mat-toolbar>
+
+    <!-- Main content area -->
+    <div class="main-content">
+      <h2>Overview</h2>
+      <p>This is your dashboard content area. Customize it as needed.</p>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
