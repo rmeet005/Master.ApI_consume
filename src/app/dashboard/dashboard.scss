@@ -4,7 +4,8 @@
 
 .sidebar {
   width: 220px;
-  background-color: #00bcd4; /* Cyan */
+  background-color: #00bcd4;
+  /* Cyan */
   color: white;
 }
 
@@ -21,7 +22,8 @@ mat-toolbar {
 mat-sidenav-content .main-content {
   padding: 24px;
   background-color: #f5f5f5;
-  min-height: calc(100vh - 64px); /* Adjust for toolbar height */
+  min-height: calc(100vh - 64px);
+  /* Adjust for toolbar height */
 }
 
 a.mat-list-item {
@@ -30,4 +32,31 @@ a.mat-list-item {
 
 a.mat-list-item:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ✅ Fix Role dropdown styling */
+.sidebar .mat-expansion-panel {
+  background-color: #00bcd4 !important;
+  /* Match sidebar */
+  color: white !important;
+  box-shadow: none !important;
+}
+
+.sidebar .mat-expansion-panel-header {
+  background-color: #00bcd4 !important;
+  color: white !important;
+}
+
+.sidebar .mat-expansion-panel-body {
+  background-color: #00acc1 !important;
+  /* Slightly darker cyan */
+  padding-left: 32px;
+}
+
+.sidebar .mat-expansion-panel-body a.mat-list-item {
+  color: white !important;
+}
+
+.sidebar .mat-expansion-panel-body a.mat-list-item:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
 }

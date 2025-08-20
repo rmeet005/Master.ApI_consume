@@ -9,6 +9,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSlideToggle } from '@angular/material/slide-toggle';
+import { MatSelectModule } from '@angular/material/select';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatCheckbox } from '@angular/material/checkbox';
 
 
 
@@ -19,7 +22,10 @@ import { MatSlideToggle } from '@angular/material/slide-toggle';
     MatButtonModule,
     MatInputModule,
     MatFormFieldModule,
-    MatCardModule
+    MatCardModule,
+    MatSelectModule,
+    MatExpansionModule,
+    MatCheckbox
   ],
   exports:[
      CommonModule,
@@ -31,6 +37,9 @@ import { MatSlideToggle } from '@angular/material/slide-toggle';
     MatSidenavModule,
     MatListModule,
     MatIconModule,
+    MatSelectModule,
+    MatExpansionModule,
+    MatCheckbox
   ]
 })
 export class MaterialModule { }
